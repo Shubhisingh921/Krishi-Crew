@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Crop</title>
+    <link rel="stylesheet" href="css/NPKform.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Predict Crop</h1>
+        <p>(N = Nitrogen    P = Phosphorus  K = Potassium)</p>
+        <div style="margin-bottom: 40px;"></div>
+        <form>
+            <div class="input-group">
+                <label for="n">Enter N:</label>
+                <input type="text" id="n" name="n" placeholder="Enter N" required>
+            
+                <label for="p">Enter P:</label>
+                <input type="text" id="p" name="p" placeholder="Enter P" required>
+            
+                <label for="k">Enter K:</label>
+                <input type="text" id="k" name="k" placeholder="Enter K" required>
+            </div>
+            <div class="boxes">
+            <label for="temperature">Enter temperature:</label>
+            <div style="margin-bottom: 10px;"></div>
+            <input type="text" id="temperature" name="temperature" placeholder="Enter temperature" required>
+            <div style="margin-bottom: 10px;"></div>
+            <label for="humidity">Enter humidity:</label>
+            <div style="margin-bottom: 10px;"></div>
+            <input type="text" id="humidity" name="humidity" placeholder="Enter humidity" required>
+            <div style="margin-bottom: 10px;"></div>
+            <label for="ph">Enter pH:</label>
+            <div style="margin-bottom: 10px;"></div>
+            <input type="text" id="ph" name="ph" placeholder="Enter pH" required>
+            <div style="margin-bottom: 10px;"></div>
+            <label for="rainfall">Enter rainfall:</label>
+            <div style="margin-bottom: 10px;"></div>
+            <input type="text" id="rainfall" name="rainfall" placeholder="Enter rainfall" required>
+            </div>
+            <div style="margin-bottom: 30px;"></div>
+            <button type="submit" id="predict-button">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

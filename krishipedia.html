@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Search and Images</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-links a {
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+}
+
+.image-links img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.image-links img:hover {
+    transform: scale(1.05);
+}
+
+.image-title {
+    font-weight: bold;
+    color: black;
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>KrishiPedia</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search the web...">
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+    <main>
+        <div class="image-links">
+            
+            <a href="https://en.wikipedia.org/wiki/Wheat">
+                <img src="images/crops/wheat.jpg" alt="Image 1">
+                <p class="image-title">Wheat</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Rice">
+                <img src="images/crops/rice.jpg" alt="Image 2">
+                <p class="image-title">Rice</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Maize">
+                <img src="images/crops/maize.jpg" alt="Image 3">
+                <p class="image-title">Maize</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Barley">
+                <img src="images/crops/barley.jpg" alt="Image 4">
+                <p class="image-title">Barley</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Apple">
+                <img src="images/crops/apple.jpg" alt="Image 5">
+                <p class="image-title">Apple</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Apricot">
+                <img src="images/crops/apricot.jpg" alt="Image 6">
+                <p class="image-title">Apricot</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Cherry">
+                <img src="images/crops/cherry.jpg" alt="Image 7">
+                <p class="image-title">Cherry</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Pear">
+                <img src="images/crops/pear.jpg" alt="Image 8">
+                <p class="image-title">Pear</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Grapes">
+                <img src="images/grapes.jpg" alt="Image 9">
+                <p class="image-title">Grapes</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Saffron">
+                <img src="images/crops/saffron.jpg" alt="Image 10">
+                <p class="image-title">Saffron</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Walnut">
+                <img src="images/crops/walnut.jpg" alt="Image 11">
+                <p class="image-title">Walnut</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Almond">
+                <img src="images/almond.jpg" alt="Image 12">
+                <p class="image-title">Almond</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Potato">
+                <img src="images/crops/potato.jpg" alt="Image 13">
+                <p class="image-title">Potato</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Cabbage">
+                <img src="images/crops/cabbage.jpeg" alt="Image 14">
+                <p class="image-title">Cabbage</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Carrot">
+                <img src="images/crops/carrot.jpg" alt="Image 15">
+                <p class="image-title">Carrot</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Chickpea">
+                <img src="images/crops/gram.jpg" alt="Image 16">
+                <p class="image-title">Gram</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Lentil">
+                <img src="images/crops/lentils.jpg" alt="Image 17">
+                <p class="image-title">Lentils</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Soybean">
+                <img src="images/soybean.jpg" alt="Image 18">
+                <p class="image-title">Soybean</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Fennel">
+                <img src="images/crops/fennel.jpg" alt="Image 19">
+                <p class="image-title">Fennel</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Cumin">
+                <img src="images/crops/cumin.jpg" alt="Image 20">
+                <p class="image-title">Cumin</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Coriander">
+                <img src="images/crops/coriander.jpg" alt="Image 21">
+                <p class="image-title">Coriander</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Tea">
+                <img src="images/crops/tea.jpg" alt="Image 22">
+                <p class="image-title">Tea</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Tobacco">
+                <img src="images/crops/tobacco.jpg" alt="Image 23">
+                <p class="image-title">Tobacco</p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Silk">
+                <img src="images/crops/silk.jpg" alt="Image 24">
+                <p class="image-title">Silk</p>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

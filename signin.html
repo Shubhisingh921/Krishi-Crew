@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1f1f1f;
+            
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+    
+        .options-container {
+            text-align: center;
+            display:inline-block;
+        }
+        
+        .option {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            background-color:white;
+            color:black;
+        }
+        
+        .option img {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        
+        .option p {
+            margin: 0;
+            font-weight: bold;
+        }
+    
+
+        .option:hover {
+            background-color: green;
+        }
+        option.selected {
+            background-color: green;
+        }
+        .input-group {
+            margin-bottom: 40px;
+        }
+
+        .input-group label {
+            display: inline-block;
+
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn-signin {
+            background-color: yellow;
+            color: grey;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-signin:hover {
+            background-color: #0056b3;
+        }
+
+        .register-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Sign In</div>
+        <div class="option">
+            <img src="images/farmer.png" alt="Farmer" width="50">
+            <p><b>FARMER</b></p>
+        </div>
+        <div class="option">
+            <img src="images/goverment.png" alt="Government" width="50">
+            <p><b>GOVERNMENT</b></p>
+        </div>
+        <div class="option">
+            <img src="images/consumer.png" alt="Consumer" width="50">
+            <p><b>CONSUMER</b></p>
+        </div>
+        <div class="input-group">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Email ID">
+        </div>
+        <div class="input-group">
+            <label for="password">Enter Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter Password">
+        </div>
+        <button class="btn-signin">Sign In</button>
+        <p>You have not registered yet! <a href="#" class="register-link">Register Now</a></p>
+    </div>
+</body>
+
+</html>
